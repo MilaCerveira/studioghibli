@@ -5,7 +5,7 @@
             <header> 
                 <a href="#">Studio Ghibli</a>
             </header>
-            <h1> <span> “You might be able to   </span> <span>do </span> more  than you <span>think.</span>”</h1>
+            <h1> <span> “You might be able to   </span> <span>do </span> more  than you <span>think.”</span></h1>
         </section>
        </div>
 
@@ -26,6 +26,11 @@
          selectedMovie: null,
        }
      },
+    //components: {
+    //"movies-list": MoviesList,
+    //"movie-detail": MovieDetail
+  //},
+
      mounted(){
        fetch('https://ghibliapi.herokuapp.com/films')
        .then(res => res.json())
@@ -39,8 +44,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 .hero-bg {
   background:#77AF9C
-    url("https://i.gifer.com/1kgB.gif");
-  background-size: 100% 320px;
+    url("https://data.whicdn.com/images/349303473/original.jpg");
+  background-size: 100% 280px;
   color: white;
   text-align: center;
   padding-bottom: 4em;
@@ -53,7 +58,7 @@ header {
 }
 
 .hero-bg a {
-  color: #ffff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 2rem;
